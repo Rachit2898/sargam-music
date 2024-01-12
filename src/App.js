@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./screen/Home";
 import Login from "./screen/Login";
 import Signup from "./screen/Signup";
+import Music from "./screen/MusicPlayer";
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home />} />
+          <Route path="/music" element={<Music />} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </div>

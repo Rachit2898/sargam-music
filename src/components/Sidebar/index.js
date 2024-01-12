@@ -27,7 +27,7 @@ function Sidebar() {
             }}
             className="h-10 w-10 cursor-pointer"
           />
-          {!toggle ? (
+          {toggle ? (
             <input
               type="text"
               className="font-500 mx-5 text-white bg-black px-5 py-2 border rounded-lg border-gray-400 placeholder-gray-400"

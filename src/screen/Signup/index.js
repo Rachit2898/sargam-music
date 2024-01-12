@@ -94,7 +94,7 @@ function Signup() {
             />
           </Link>
         </div>
-        <main className="flex flex-col mt-8   p-16 lg:w-[50%] bg-gradient-to-b bg-black items-center ">
+        <main className="flex flex-col mt-8   p-16 lg:w-[50%]  bg-black items-center ">
           <div className="lg:w-[75%]">
             <h1 className="heading font-bold text-5xl text-center pb-12">
               Sign up for free to start listening.
@@ -123,7 +123,6 @@ function Signup() {
                   handleErrorState={handleErrorState}
                   value={data.email}
                   error={errors.email}
-                  required={true}
                 />
               </div>
               <div className=" w-full my-2">
@@ -137,7 +136,6 @@ function Signup() {
                   value={data.password}
                   error={errors.password}
                   type="password"
-                  required={true}
                 />
               </div>
               <div className=" w-full my-2">
@@ -150,7 +148,6 @@ function Signup() {
                   handleErrorState={handleErrorState}
                   value={data.name}
                   error={errors.name}
-                  required={true}
                 />
               </div>
               <div className=" w-full my-2">
@@ -164,7 +161,6 @@ function Signup() {
                       placeholder="Months"
                       options={months}
                       value={data.month}
-                      required={true}
                     />
                   </div>
                   <div class="date w-28">
@@ -174,7 +170,6 @@ function Signup() {
                       name="date"
                       value={data.date}
                       handleInputState={handleInputState}
-                      required={true}
                     />
                   </div>
                   <div class="year w-30">
@@ -184,7 +179,6 @@ function Signup() {
                       name="year"
                       value={data.year}
                       handleInputState={handleInputState}
-                      required={true}
                     />
                   </div>
                 </div>
@@ -195,14 +189,10 @@ function Signup() {
                   name="gender"
                   handleInputState={handleInputState}
                   options={genders}
-                  required={true}
                 />
               </div>
               <div className=" w-full my-2">
-                <Checkbox
-                  required={true}
-                  label="Share my registration data with Spotify's content providers for marketing purposes."
-                />
+                <Checkbox label="Share my registration data with Spotify's content providers for marketing purposes." />
               </div>
               <div className=" w-full my-2 flex flex-col items-center">
                 <p class="terms_condition text-sm leading-6 text-center mb-4">

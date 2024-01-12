@@ -63,7 +63,7 @@ function Login() {
             />
           </Link>
         </div>
-        <main className="flex flex-col mt-8  p-16 lg:w-[50%] bg-gradient-to-b bg-black items-center ">
+        <main className="flex flex-col mt-8  p-16 lg:w-[50%]  bg-black items-center ">
           <div className="lg:w-[55%]">
             <h1 className="heading font-bold text-5xl text-center pb-12">
               Log in to Spotify.
@@ -126,7 +126,7 @@ function Login() {
                   style={{
                     color: "white",
                     background: "#15883e",
-                    width: "20rem",
+                    width: "15rem",
                     height: "3rem",
                     borderRadius: 40,
                   }}
